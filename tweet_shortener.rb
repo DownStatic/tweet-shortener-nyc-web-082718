@@ -18,3 +18,10 @@ def word_substituter(tweet)
   end
   return new_tweet.join(" ")
 end
+
+def bulk_tweet_shortener(tweets)
+  tweets.each do |tweet|
+    word_substituter(tweet)
+    puts new_tweet
+  end
+end
