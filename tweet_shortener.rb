@@ -10,8 +10,8 @@ def word_substituter(tweet)
   expanded_tweet = tweet.split
   new_tweet = []
   expanded_tweet.collect do |word|
-    if comparison.include?(word)
-      new_tweet << dictionary[word]
+    if comparison.include?(word.downcase)
+      new_tweet << dictionary[word.downcase]
     else
       new_tweet << word
     end
