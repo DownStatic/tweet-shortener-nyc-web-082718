@@ -11,8 +11,10 @@ def word_substituter(tweet)
   new_tweet = []
   expanded_tweet.collect do |word|
     if comparison.include?(word)
-      word = dictionary[word]
+      new_tweet << dictionary[word]
+    else
+      new_tweet << word
     end
   end
-  return dictionary
+  return new_tweet.join(" ")
 end
