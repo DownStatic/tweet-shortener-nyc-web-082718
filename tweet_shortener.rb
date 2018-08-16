@@ -13,5 +13,5 @@ def word_substituter(tweet)
       word = dictionary[:word]
     end
   end
-  return expanded_tweet.join(" ")
+  return comparison
 end
